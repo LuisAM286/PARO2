@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+    <link rel="shortcut icon" href="img/pdparo.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+        <div class="menu-icon" onclick="toggleSidebar()">
+            ☰
+        </div>
+        <a href="index.html" class="logo">
+            <img src="img/open-book.png" alt="">
+            <h2>PARO</h2>
+        </a>
+
+    </header>
+
+    <a href="#" id="contactLink" class="btn">Participa</a>
+    
+    <div id="sidebar" class="sidebar">
+        <a onclick="toggleSidebar()" class="closebtn">X</a>
+        <h2>CATEGORIAS</h2>
+        <a href="BTDC.html"><img src="img/home-heart-regular-24.png">BTDC</a>
+        <a href="BTQM.html"><img src="img/leaf-regular-24.png" alt="">BTQM</a>
+        <a href="TPAL.html"> <img src="img/bowl-rice-regular-24.png" alt="">TPAL</a>
+        <a href="TPSI.html"><img src="img/laptop-regular-24.png" alt="">TPSI</a>
+        <a href="TPEI.html"><img src="img/bulb-regular-24.png" alt="">TPEI</a>
+        <a href="TPMI.html"><img src="img/wrench-regular-24.png" alt="">TPMI</a>
+        <a href="TPMF.html"><img src="img/hot-solid-24.png" alt="">TPMF</a>
+        <a href="TPPL.html"><img src="img/flask-solid-24.png" alt="">TPPL</a>
+        <a href="TPPQ.html"><img src="img/vial-solid-24.png" alt="">TPPQ</a>
+    </div>
+    
+    <div class="contenedor">
+        <img src="img/doslibros.png" class="papel">
+        <img src="img/abs.png" class="yelou">
+        <img src="img/oran.png" class="oran">
+        <span class="texto">¿Quienes somos?</span>
+        <span class="texto-secundario">"Somos Paro, una iniciativa creada por estudiantes de la Escuela Politécnica de Guadalajara. Nuestro objetivo es brindar apoyo académico, recursos útiles y una comunidad colaborativa que ayude a otros estudiantes a superar los retos de su formación. Creemos en el poder de trabajar juntos para alcanzar el éxito."</span>
+        <img src="img/pd.jpeg" alt="Imagen" class="imagen">
+    </div>
+
+
+    <div id="contactModal"  class="cont-part">
+
+    <div class="part-contenido">
+        <h2>Participa</h2>
+        <p>Escríbenos si quieres participar dando asesorias</p>
+
+        <form id="formPar" onsubmit="enviarCorreo(); return false;">
+            <div class="participante">
+                <input type="text" id="nombreC" required>
+                <label>Nombre completo</label>
+            </div>
+            <div class="participante" >
+                <input type="number" id="codigo" minlength="9" required>
+                <label>Código</label>
+            </div>
+            <div class="participante">
+                <input type="email" id="correo" required>
+                <label>Correo</label>
+            </div>
+            <div class="participante" >
+                <input type="text" id="carrera" required>
+                <label>Carrera</label>
+            </div>
+            <div class="participante">
+                <input type="number" id="grado" required>
+                <label>Grado</label>
+            </div>
+            <div class="participante">
+                <input type="text" id="materia" required>
+                <label>Materia a participar</label>
+            </div>
+            <div class="participante">
+                <input type="text" id="esp" required>
+                <label>En que eres bueno en la materia</label>
+            </div>
+            <div class="participante">
+                <input type="text" id="promedioM" required>
+                <label>Promedio en esa materia</label>
+            </div>
+            <div class="participante">
+                <input type="text" id="promedioG" required>
+                <label>Promedio General</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    </div>
+
+    <footer>
+        <div class="tit"> Si tienes alguna sugerencia, hazlo saber aquí.</div>
+        <div class="contenedor1">
+            <h2>Escribe tu sugerencia</h2>
+            <textarea id="suggestionBox" placeholder="Escribe tu sugerencia aquí..."></textarea>
+            <div class="cont" id="wordCounter">Palabras: 0/50</div>
+            <div class="mensaje" id="errorMessage"></div>
+            <button  class="babyboton"  onclick="submitSuggestion()">Enviar</button>
+        </div>
+        <div class="paro">
+            <div class="tt">PARO</div>
+            <img src="img/open-book.png" class="paroimg2">
+        </div>
+    </footer>
+
+</body>
+</html>
