@@ -514,10 +514,6 @@ form .participante{
     z-index: 3;
 }
 
-.contenedor:hover{
-    border-bottom: 2px solid white;
-}
-
 .contenedor:hover .texto-secundario {
     opacity: 1;
     transform: translateX(-50%) translateX(50px);
@@ -559,6 +555,7 @@ footer a:hover{
     font-family: 'sugeren';
     text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
     font-size: 30px;
+    z-index:1;
 }
 
 .contenedor1 {
